@@ -1,7 +1,8 @@
 const express = require("express");
 const courseRaw = require("./course.json");
 const { rnd10 } = require("./rnd");
-const app = express();
+const cors = require("cors");
+const app = express(cors());
 
 const port = process.env.PORT ?? 3000;
 
