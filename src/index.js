@@ -12,7 +12,7 @@ const {
   getDefaultUserHandler,
 } = require("./api/user.controller");
 
-const { getInitialFactorialValue } = require("./api/factorial.controller");
+const { getDefaultPrimeValue } = require("./api/prime.controller");
 
 const app = express();
 
@@ -28,7 +28,7 @@ app.get("/lesson/:name", searchLessonHandler);
 app.get("/user/default", getDefaultUserHandler);
 app.post("/user", createUserHandler);
 
-app.get("/factorial/initialValue", getInitialFactorialValue);
+app.get("/factorial/initialValue/:value", getDefaultPrimeValue);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
