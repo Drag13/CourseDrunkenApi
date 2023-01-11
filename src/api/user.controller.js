@@ -31,8 +31,15 @@ function createUserHandler(req, res) {
   return res.send({ scoring: "SS" });
 }
 
+const defaultUser = { name: "Vitalii" };
+
+function getDefaultUserHandler(_, res) {
+  return res.send(defaultUser);
+}
+
 module.exports = {
   createUserHandler,
+  getDefaultUserHandler,
 };
 
 /**
