@@ -1,5 +1,5 @@
 function getInitialFactorialValue(_, res) {
-  return res.send({ value: 12_5000 });
+  return res.send({ value: 12_000 });
 }
 
 module.exports = {
