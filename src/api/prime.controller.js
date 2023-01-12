@@ -1,4 +1,4 @@
-const GET_PRIME_DELAY_MS = 150;
+const GET_PRIME_DELAY_MS = 80;
 
 function getDefaultPrimeValue(req, res) {
   const defaultValue = req.params.value;

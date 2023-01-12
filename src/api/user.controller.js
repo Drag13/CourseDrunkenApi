@@ -32,7 +32,7 @@ function createUserHandler(req, res) {
 }
 
 const defaultUser = { name: "Vitalii" };
-const GET_USER_DELAY_MS = 250;
+const GET_USER_DELAY_MS = 150;
 function getDefaultUserHandler(_, res) {
   setTimeout(() => {
     res.send(defaultUser);
