@@ -32,9 +32,11 @@ function createUserHandler(req, res) {
 }
 
 const defaultUser = { name: "Vitalii" };
-
+const GET_USER_DELAY_MS = 250;
 function getDefaultUserHandler(_, res) {
-  return res.send(defaultUser);
+  setTimeout(() => {
+    res.send(defaultUser);
+  }, GET_USER_DELAY_MS);
 }
 
 module.exports = {
